@@ -30,9 +30,9 @@
 						<p v-if="item.inStock">En stock</p>
 						<p v-if="!item.inStock" >En rupture de stock</p>
 						<div>
-							<label for="add-item-quantity">Quantité :</label>
-							<input id="add-item-quantity" type="number" v-model="quantityTotal"/>
-							<button @click="addToShoppingCart">Ajouter au panier d'achat</button>
+							<label for="add-item-quantity">Quantité : {{ item.quantity }}</label>
+							<input id="add-item-quantity" type="number" v-model="item.quantity"/>
+							<button @click="addToShoppingCart(item.quantity)">Ajouter au panier d'achat</button>
 						</div>
 					</div>
 				</div>
@@ -106,8 +106,8 @@
 					}
 				},
 				methods: {
-					addToShoppingCart() {
-						this.quantityTotal = 1
+					addToShoppingCart(nb) {
+						this.quantityTotal += nb
 					}
 				}
 			})
