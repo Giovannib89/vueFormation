@@ -61,7 +61,7 @@ export default {
         {
           name: "Croissant",
           image: {
-            source: "./assets/croissant.jpg",
+            source: "/images/croissant.jpg",
             alt: "Un croissant"
           },
           inStock: true,
@@ -70,7 +70,7 @@ export default {
         {
           name: "Baguette de pain",
           image: {
-            source: "./assets/french-baguette.jpeg",
+            source: "/images/french-baguette.jpeg",
             alt: "Quatre baguettes de pain"
           },
           inStock: true,
@@ -79,7 +79,7 @@ export default {
         {
           name: "Éclair",
           image: {
-            source: "./assets/eclair.jpg",
+            source: "/images/eclair.jpg",
             alt: "Éclair au chocolat"
           },
           inStock: false,
