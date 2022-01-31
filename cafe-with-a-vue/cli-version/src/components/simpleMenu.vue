@@ -28,7 +28,7 @@
 </template>
 <script>
 export default {
-  name: 'simpleMenu',
+  name: 'SimpleMenu',
   props: ["addToShoppingCart", "image", "inStock", "name", "quantity"]
 }
 </script>

@@ -15,7 +15,7 @@
           :image="item.image"
           :inStock="item.inStock"
           :quantity="item.quantity"
-          :addToShoppingCart="item.addToShoppingCart"
+          :addToShoppingCart="addToShoppingCart"
         />
 			</section>
       
