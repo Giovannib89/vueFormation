@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app">
     <h1>{{ restaurantName }}</h1>
 			<p class="description">
 				Bienvenue dans notre café {{ restaurantName }}! Nous sommes réputés pour
@@ -43,10 +43,10 @@
 </template>
 
 <script>
-import SimpleMenu from './components/simpleMenu.vue'
+import SimpleMenu from './components/SimpleMenu'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
     SimpleMenu
   },
