@@ -7,6 +7,7 @@ export default new Vuex.Store({
 	state: {
 		restaurantName: "La belle vue",
 		shoppingCart: 0,
+    onSale: false,
 		simpleMenu: [
 			{
 				name: "Croissant",
@@ -47,7 +48,15 @@ export default new Vuex.Store({
 			return `Copyright ${state.restaurantName} ${currentYear}`
 		}
 	},
-	mutations: {},
-	actions: {},
+	mutations: {
+    ADD_TO_SHOPPINCART(state, payload) {
+      state.shoppingCart += Number(payload)
+    }
+  },
+	actions: {
+    addToShoppingCart({ commit }, amount) {
+      commit("ADD_TO_SHOPPINCART", amount)
+    }
+  },
 	modules: {}
 })
